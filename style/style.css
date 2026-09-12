@@ -5,6 +5,7 @@
   font-style: normal;
 }
 /* shared style */
+
 .btn-primary{
      background-color: rgba(224, 44, 109, 1);
      border: none;
@@ -21,8 +22,16 @@
 .display{
     display: flex;
 }
-main{
+header{
     max-width: 1440px;
+    margin: 0 auto;
+}
+.camera{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+.company{
+    max-width: 1200px;
     margin: 0 auto;
 }
 
@@ -71,6 +80,17 @@ main{
     font-size: 1rem;
     font-weight: 500;
     color: rgba(58, 58, 58, 1);
+}
+
+/* sponsor section */
+.sponsor-company{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    margin-top: 120px;
+    
+}
+.sponsor-company img{
+    filter: grayscale(100%);
 }
 
 /* small device responsibe */
