@@ -5,6 +5,19 @@
   font-style: normal;
 }
 /* shared style */
+.btn-primary{
+     background-color: rgba(224, 44, 109, 1);
+     border: none;
+     padding: 24px 10px 40px 10px;
+     border-radius: 40px;
+     color: white;
+     font-size: 1rem;
+     font-weight: bold;
+     width: 190px;
+     height: 40px;
+     text-align: center;
+}
+
 .display{
     display: flex;
 }
@@ -35,3 +48,58 @@ main{
     max-width: 1440px;
     margin: 0 auto;
 }
+
+/* camera style */
+.camera{
+    display: flex;
+     justify-content: space-between;
+}
+.img{
+    background-image: url(../images/Circle\ design.svg);
+    margin-top: 180px;
+}
+
+.description{
+    margin-top: 250px;
+}
+.camera-title{
+    font-size: 3rem;
+    font-weight: bold;
+    color: rgba(58, 58, 58, 1);
+}
+.camera-description{
+    font-size: 1rem;
+    font-weight: 500;
+    color: rgba(58, 58, 58, 1);
+}
+
+/* small device responsibe */
+@media screen and (max-width:576px) {
+    .navbar{
+        flex-direction: column;
+    }
+     .nav-links{
+        flex-direction: column;
+        gap: 20px;
+     }
+     .camera{
+        flex-direction: column-reverse;
+        gap: 0px;
+         
+     }
+     .img{
+        width: 100%;
+         background-repeat: no-repeat;
+         background-position: center;
+         background-size: contain;
+         padding: 0;
+         margin: 0;
+         height: 200px;
+     }
+     .description{
+        text-align: center;
+     }
+    
+    
+}
+
